@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Bokklubben - Startsida</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<h1 th:text="${greeting}">Hälsning</h1>
+<p>Dagens datum är: <span th:text="${currentDate}">Datum</span></p>
+
+<nav>
+    <ul>
+        <li><a href="/home">Startsida</a></li>
+        <li><a href="/books">Alla böcker</a></li>
+        <li><a href="/genre">Filtrera efter en genre</a></li>
+    </ul>
+</nav>
+</body>
+</html>
